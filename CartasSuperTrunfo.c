@@ -7,6 +7,13 @@ int main() {
     char estado;
     int populacao, pontos_turiticos;
     float area, pib;
+    //Aventureiro: cálculo de densidade e PIB per carpita
+    float pib_percapita, densidade;
+
+    //Atribuição de operadores matemáticos
+    pib_percapita = pib / populacao;
+    densidade = populacao / area;
+
 
     printf("Cadastro de Cartas do Super Trunfo Países\n");
 
@@ -43,6 +50,8 @@ int main() {
     printf("Área: %f\n", area);
     printf("PIB (Produto Interno Bruto): %f bilhões de reais\n", pib);
     printf("Quantidade de Pontos Turísticos: %f\n", pontos_turiticos);
+    printf("Densidade Populacional: %f\n", densidade);
+    printf("PIB per capita: %f\n", pib_percapita);
 
      //Leitura de dados da Carta 2
     printf("CARTA 2\n");
@@ -77,9 +86,10 @@ int main() {
     printf("Área: %f\n", area);
     printf("PIB (Produto Interno Bruto): %f bilhões de reais\n", pib);
     printf("Quantidade de Pontos Turísticos: %f\n", pontos_turiticos);
+    printf("Densidade Populacional: %f\n", densidade);
+    printf("PIB per capita: %f\n", pib_percapita);
 
 
     return 0;
-
 
 }
